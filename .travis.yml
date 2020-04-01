@@ -1,12 +1,12 @@
-# We want to use the KVM-based system, so require sudo
-sudo: required
-services:
-  - docker
+# # We want to use the KVM-based system, so require sudo
+# sudo: required
+# services:
+#   - docker
 
-before_install:
-  - git clone --depth=1 https://github.com/discourse/discourse-plugin-ci
+# before_install:
+#   - git clone --depth=1 https://github.com/discourse/discourse-plugin-ci
 
-install: true # Prevent travis doing bundle install
+# install: true # Prevent travis doing bundle install
 
-script:
-  - discourse-plugin-ci/script.sh
+# script:
+#   - discourse-plugin-ci/script.sh
